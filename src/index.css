@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "Ownglyph_ryurue-Rg";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2411-3@1.0/Ownglyph_StudyHard-Rg.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Ownglyph_corncorn-Rg */
+/* Ownglyph_StudyHard-Rg */
+
+html,
+body {
+  margin: 0;
+  width: 100%;
+  background-color: rgb(246, 246, 246);
+}
+
+#root {
+  background-color: white;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 100vh;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px;
+  padding: 0px 20px;
+}
+
+body * {
+  font-family: "Ownglyph_ryurue-Rg";
+}
