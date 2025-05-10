@@ -1,6 +1,6 @@
 import { RouterProvider } from "react-router-dom";
 import { router } from "./router/index.jsx";
-import { useReducer, useRef } from "react";
+import { useReducer, useRef, createContext } from "react";
 
 const mockData = [
   {
@@ -29,6 +29,9 @@ const reducer = (state, action) => {
       return state.filter((item) => item.id !== action.id);
   }
 };
+
+const DiaryStateContext = createContext();
+const DiaryDispatchContext = createContext();
 
 const App = () => {
   const [data, dispatch] = useReducer(reducer, mockData);
@@ -79,7 +82,11 @@ const App = () => {
         일기 수정 테스트
       </button>
       <button onClick={() => onDelete(1)}>일기 삭제 테스트</button>
-      <RouterProvider router={router} />
+      <DiaryStateContext.Provider value={data}>
+        <DiaryDispatchContext.Provider value={{ onCreate, onUpdate, onDelete }}>
+          <RouterProvider router={router} />
+        </DiaryDispatchContext.Provider>
+      </DiaryStateContext.Provider>
     </>
   );
 };
