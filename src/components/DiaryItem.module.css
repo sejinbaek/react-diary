@@ -1,0 +1,35 @@
+.DiaryItem {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+  padding: 15px 0px;
+  border-bottom: 1px solid lightgray;
+  /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); hover 시 스타일 적용 */
+}
+
+.DiaryItem_img {
+  min-width: 120px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(197, 158, 144);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.DiaryItem_info {
+  flex: 1;
+  cursor: pointer;
+}
+
+.DiaryItem_createdDate {
+  font-size: 25px;
+}
+
+.DiaryItem_content {
+  font-size: 18px;
+}
+
+.DiaryItem_btn {
+  min-width: 70px;
+}
