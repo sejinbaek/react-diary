@@ -1,0 +1,22 @@
+.EmotionItem {
+  background-color: rgb(236, 236, 236);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  padding: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.EmotionItem_img {
+  width: 50%;
+}
+
+.EmotionItem:hover {
+  background-color: rgb(197, 158, 144);
+}
+
+.EmotionItem_on {
+  background-color: rgb(197, 158, 144);
+}
